@@ -295,7 +295,7 @@ print(
     a["ml_int"],
     " rel",
     a["ml_int"] / a["exact"] - 1,
-    ' left mass",
+    "left mass",
     a["left_mass"],
 )
 for key in ("ml_s0", "ml_s05", "ml_s1"):
