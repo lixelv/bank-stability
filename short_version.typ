@@ -151,4 +151,4 @@ $ m approx 20 + (20 - 10) / sqrt(9.8) dot sqrt(19.6) approx 34.14. $
 
 *Репозиторий:* https://github.com/lixelv/bank-stability. Расчёты запускаются командой `python3 calc.py`; значения и графики загружаются из `results.json`.
 
-Полная команда: `git clone https://github.com/lixelv/bank-stability && cd bank-stability && python3 calc.py && cd .. && rm -rf bank-stability`
+Полная команда: `git clone https://github.com/lixelv/bank-stability && cd bank-stability && python3 calc.py`
