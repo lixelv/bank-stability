@@ -6,7 +6,6 @@
 #let C = data.c
 #let MC = data.mc
 
-// ---------- оформление ----------
 #let apply-style(body) = {
     set page(
         paper: "a4",
@@ -41,7 +40,6 @@
     body
 }
 
-// ---------- форматирование чисел ----------
 #let pad(s, d) = {
   let parts = s.split(".")
   let frac = if parts.len() > 1 { parts.at(1) } else { "" }
@@ -58,7 +56,7 @@
   }
   box($#fixed(m, d - 1) dot 10^(#e)$)
 }
-// вероятность: обычная запись, если >= 0.01, иначе научная
+
 #let pr(x, d: 3) = if x >= 0.01 { fixed(x, 4) } else { sci(x, d: d) }
 #let pct(x, d: auto) = {
   let v = x * 100
@@ -84,7 +82,6 @@
 #let eq(body) = math.equation(block: true, numbering: "(1)", body)
 #let eqref(l) = ref(l, supplement: none)
 
-// ---------- стили графиков ----------
 #let c-exact = black
 #let c-pois = rgb("#1f6fb4")
 #let c-ml0 = rgb("#c8372d")
